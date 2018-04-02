@@ -73,7 +73,7 @@ int checkForWinner( char a[], int cnt, char* playerPtr  ){
  Tells the current player the available moves and enters the choice **/
 
 void takeTurn( char a[], char *playerPtr  ){
-   int available[8];
+   int available[9];
    int i, j = 0, choice;
    for(i = 0; i < 9; i++ )
       if( (a[i] != 'X') && (a[i] != 'O')  )
