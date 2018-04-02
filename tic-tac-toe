@@ -12,7 +12,7 @@ int main(){
    
    drawGrid( grid );
    
-   while( !done ){
+   while( done == 0 ){
       takeTurn( grid, &currentPlayer );
       drawGrid( grid );
       done = checkForWinner( grid, counter, &currentPlayer );
@@ -61,7 +61,7 @@ int checkForWinner( char a[], int cnt, char* playerPtr  ){
       gameOver = 1;
    }
 
-   if( cnt == 8  && gameOver ==  0 ){
+   if( cnt == 8  && gameOver == 0 ){
       printf( "Awww. It's a cat's game.\n\n" );
       gameOver = 1;
    }
